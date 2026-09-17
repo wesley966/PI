@@ -1,97 +1,69 @@
 # 🎮 Análise Comparativa de Plataformas de Ensino de Programação
 
-
-
-| Critério | Seu App | Scratch | CodeCombat | Blockly Games | Lightbot | Minecraft Education | Roblox Studio |
-
-| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-
+ Critério | Seu App | Scratch | CodeCombat | Blockly Games | Lightbot | Minecraft Education | Roblox Studio |
+-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|
 | Público-alvo | Adolescentes | Crianças e iniciantes | Adolescentes e iniciantes | Crianças e iniciantes | Crianças | Estudantes | Jovens e adolescentes |
-
 | Tipo de programação | Código textual | Blocos | Código textual | Blocos | Lógica visual | Blocos e automação | Código textual |
-
 | Gamificação | Alta | Média | Alta | Média | Alta | Alta | Alta |
-
 | Narrativa/História | Média | Baixa | Alta | Baixa | Baixa | Média | Variável |
-
 | Sistema de fases | ✅ Sim | 🟡 Parcial | ✅ Sim | ✅ Sim | ✅ Sim | ✅ Sim | 🟡 Variável |
-
 | Feedback imediato | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-
 | Ensino de algoritmos | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-
 | Ensino de loops | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-
 | Ensino de condicionais | ❌ | ✅ | ✅ | ✅ | 🟡 Parcial | ✅ | ✅ |
-
 | Criação de projetos próprios | ✅ | ✅ | 🟡 Parcial | ❌ | ❌ | ✅ | ✅ |
-
 | Programação por blocos | ❌ | ✅ | ❌ | ✅ | ✅ | ✅ | ❌ |
-
 | Linguagem real de programação | ✅ | ❌ | ✅ | 🟡 Parcial | ❌ | 🟡 Parcial | ✅ |
-
 | Compartilhamento online | ✅ | ✅ | ✅ | ❌ | ❌ | ✅ | ✅ |
-
 | Trabalho colaborativo | ❌ | 🟡 Limitado | 🟡 Limitado | ❌ | ❌ | ✅ | ✅ |
-
 | Gratuito | ✅ | ✅ | 🟡 Parcial | ✅ | 🟡 Parcial | 🟡 Parcial | ✅ |
-
  
-
----
-
- 
-
 ## 📖 Legenda
-
  
-25
 | Símbolo | Significado |
-26
-| :---: | --- |
-27
+|----------|-------------|
 | ✅ | Presente |
-28
 | ❌ | Ausente |
-29
 | 🟡 | Parcial ou Limitado |
+ 
+## 🚀 Diferenciais do Seu App
 30
  
 31
----
+- [ ] Programação com código real
 32
- 
+- [ ] Sistema de gamificação
 33
-## 🚀 Diferenciais do Seu App
+- [ ] Progressão por fases
 34
- 
+- [ ] Compartilhamento online
 35
-- [ ] Adicionar descrição do projeto
+- [ ] Foco em adolescentes
 36
-- [ ] Adicionar mecânicas de gamificação
+- [ ] Desenvolvimento de raciocínio lógico
 37
-- [ ] Adicionar público-alvo
+- [ ] Projetos criados pelo usuário
 38
-- [ ] Adicionar tecnologias utilizadas
+ 
 39
-- [ ] Adicionar diferenciais competitivos
+## 📊 Resumo das Plataformas
 40
  
 41
-### Possíveis Diferenciais
+| Plataforma | Principal Diferencial |
 42
- 
+|------------|----------------------|
 43
-- Sistema de progressão por níveis
+| Scratch | Programação em blocos para iniciantes |
 44
-- Missões baseadas em desafios reais
+| CodeCombat | RPG com programação real |
 45
-- Aprendizado de programação com código real
+| Blockly Games | Ensino gradual de lógica computacional |
 46
-- Sistema de recompensas e conquistas
+| Lightbot | Quebra-cabeças focados em algoritmos |
 47
-- Integração com projetos compartilháveis
+| Minecraft Education | Aprendizagem em ambiente imersivo |
 48
-- Interface voltada para adolescentes
+| Roblox Studio | Criação de jogos com programação |
 49
-- Aprendizagem adaptativa baseada no desempenho do usuário
+| Seu App | Gamificação voltada para adolescentes utilizando código real |
