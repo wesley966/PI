@@ -1,0 +1,493 @@
+\documentclass{article}
+
+% Language setting
+% Replace `english' with e.g. `spanish' to change the document language
+\usepackage[english]{babel}
+
+% Set page size and margins
+% Replace `letterpaper' with `a4paper' for UK/EU standard size
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+% Useful packages
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+
+\title{JOGO DO APRENDIZADO: UM JEITO DE APRENDER CÓDIGOS COM JOGOS}
+\author{Wesllei Oliveira da Rosa\\
+Técnico em Desenvolvimento de Sistemas\\
+Serviço Nacional de Aprendiagem Comercial-SENAC\\
+São Leopoldo
+}
+
+
+
+
+\begin{document}
+\maketitle
+
+\begin{Resumo}
+    Resumo
+Este projeto apresenta o desenvolvimento de um aplicativo educacional voltado ao ensino de programação por meio de minijogos interativos. A proposta surgiu da necessidade de tornar o aprendizado de conceitos básicos de programação mais acessível, dinâmico e motivador para iniciantes, considerando as dificuldades encontradas nos métodos tradicionais de ensino.
+O aplicativo reúne diferentes desafios e atividades lúdicas que abordam conteúdos como lógica de programação, algoritmos, variáveis, estruturas condicionais e estruturas de repetição. Utilizando elementos de gamificação, como sistema de pontuação, progressão por níveis e feedback imediato, a plataforma busca aumentar o engajamento dos usuários e estimular a prática contínua dos conceitos apresentados.
+A fundamentação teórica do trabalho baseia-se nos conceitos de tecnologias na educação, aprendizagem ativa, usabilidade e gamificação, evidenciando a importância de métodos inovadores para o processo de ensino e aprendizagem. A metodologia adotada caracteriza-se como uma pesquisa aplicada, de natureza exploratória e abordagem qualitativa, envolvendo etapas de levantamento bibliográfico, definição de requisitos, modelagem do sistema, desenvolvimento, testes e avaliação.
+Os resultados obtidos indicam que a utilização de jogos educacionais pode contribuir para o desenvolvimento do raciocínio lógico, do pensamento computacional e da capacidade de resolução de problemas, tornando o processo de aprendizagem mais atrativo e eficiente. Conclui-se que o aplicativo possui potencial para atuar como uma ferramenta complementar no ensino de programação, promovendo uma experiência educativa interativa e acessível aos usuários.
+Palavras-chave: programação, aplicativo educacional, gamificação, aprendizagem ativa, tecnologia na educação.
+\end{Resumo}
+
+\begin{abstract}
+This project presents the development of an educational application aimed at teaching programming through interactive mini-games. The proposal emerged from the need to make the learning of basic programming concepts more accessible, dynamic, and motivating for beginners, considering the difficulties often encountered in traditional teaching methods.
+The application brings together different challenges and playful activities that cover topics such as programming logic, algorithms, variables, conditional structures, and loops. By using gamification elements, including a scoring system, level progression, and immediate feedback, the platform seeks to increase user engagement and encourage the continuous practice of the concepts presented.
+The theoretical foundation of this work is based on the concepts of educational technology, active learning, usability, and gamification, highlighting the importance of innovative methods in the teaching and learning process. The adopted methodology is characterized as applied research, with an exploratory nature and a qualitative approach, involving stages such as literature review, requirements analysis, system modeling, development, testing, and evaluation.
+The results obtained indicate that the use of educational games can contribute to the development of logical reasoning, computational thinking, and problem-solving skills, making the learning process more attractive and effective. It is concluded that the application has the potential to serve as a complementary tool for programming education, promoting an interactive and accessible learning experience for users.
+Keywords: programming, educational application, gamification, active learning, educational technology.
+\end{abstract}
+
+\chapter{Introduction}
+
+\section{Introdução do Projeto}
+O avanço da tecnologia e a crescente demanda por profissionais da área de desenvolvimento de software tornam cada vez mais importante o ensino de programação desde os primeiros níveis de aprendizagem. Entretanto, muitos iniciantes encontram dificuldades para aprender conceitos de lógica e programação devido à complexidade dos conteúdos e métodos tradicionais de ensino.
+Com o objetivo de tornar esse processo mais acessível, dinâmico e divertido, foi desenvolvido um projeto de jogo educacional em formato de aplicativo móvel, voltado para o ensino dos fundamentos da programação. A proposta consiste em reunir diversos minijogos interativos que apresentam conceitos de codificação de forma gradual, utilizando desafios, recompensas e mecânicas de gamificação para aumentar o engajamento do usuário.
+O aplicativo permite que os jogadores aprendam conceitos essenciais da programação enquanto se divertem, resolvendo problemas relacionados à lógica computacional, algoritmos, variáveis, estruturas condicionais, laços de repetição e resolução de problemas. Cada jogo foi projetado para trabalhar habilidades específicas, estimulando o raciocínio lógico, a criatividade e a capacidade de análise.
+Além do caráter educativo, o projeto busca proporcionar uma experiência intuitiva e motivadora, oferecendo progressão por níveis, sistema de pontuação, conquistas e feedback imediato sobre o desempenho do usuário. Dessa forma, o aplicativo se torna uma ferramenta eficiente tanto para estudantes que desejam iniciar seus estudos em programação quanto para pessoas interessadas em desenvolver habilidades tecnológicas de maneira prática e divertida.
+Em resumo, este projeto combina educação e entretenimento para criar um ambiente de aprendizagem inovador, no qual os usuários podem adquirir conhecimentos de programação através de desafios interativos e jogos simples, tornando o aprendizado mais atrativo e eficaz.
+Forneça seus comentários sobre o BizChatYou said: continuacao : \\contexto,, problema, justificativa objetivo e referenciasCopilot said: Copilot1. Contexto
+Nos últimos anos, a tecnologia tornou-se parte fundamental da sociedade, estando presente em diversas áreas, como educação, comunicação, saúde e mercado de trabalho. Com isso, o aprendizado de programação passou a ser considerado uma habilidade importante para o desenvolvimento do raciocínio lógico e da capacidade de resolução de problemas.
+Nesse cenário, surgem novas metodologias de ensino que buscam tornar o aprendizado mais atrativo e acessível. Uma dessas abordagens é a gamificação, que utiliza elementos de jogos para estimular a participação e o engajamento dos usuários. A combinação entre jogos e educação tem demonstrado grande potencial para facilitar a aprendizagem de conteúdos considerados complexos, como a programação.
+Diante dessa realidade, este projeto propõe o desenvolvimento de um aplicativo educacional composto por diversos minijogos interativos voltados ao ensino dos conceitos básicos de programação. A plataforma busca oferecer uma experiência dinâmica e divertida, permitindo que os usuários aprendam enquanto jogam.
+
+
+\subsection{Contexto}
+
+\subsection{Problema}
+Apesar da crescente importância da programação no mundo atual, muitas pessoas encontram dificuldades para iniciar seus estudos na área. Métodos tradicionais de ensino frequentemente apresentam conteúdos teóricos complexos, tornando o aprendizado cansativo e desmotivador para iniciantes.
+Além disso, a falta de ferramentas interativas e acessíveis pode dificultar a compreensão de conceitos fundamentais, como lógica de programação, algoritmos, estruturas condicionais e repetições. Dessa forma, surge a seguinte questão:
+Como tornar o aprendizado de programação mais acessível, motivador e eficiente para iniciantes por meio de recursos interativos e lúdicos?
+
+\subsection{Justificativa}
+O desenvolvimento deste aplicativo educacional justifica-se pela necessidade de criar métodos de ensino mais envolventes para a aprendizagem de programação. A utilização de jogos como ferramenta educacional contribui para o aumento do interesse dos alunos, tornando o processo de aprendizagem mais agradável e menos intimidante.
+Além disso, o aplicativo pode auxiliar estudantes, jovens e adultos que desejam iniciar seus estudos em programação, oferecendo uma alternativa prática e acessível aos métodos convencionais de ensino. A proposta também contribui para o desenvolvimento de habilidades importantes, como raciocínio lógico, pensamento computacional, criatividade e resolução de problemas.
+Portanto, o projeto possui relevância educacional e tecnológica, ao unir entretenimento e aprendizado em uma única plataforma capaz de estimular o interesse pela área da computação.
+
+\subsection{Objetivo Geral}
+Desenvolver um aplicativo educacional composto por minijogos interativos que auxiliem os usuários na aprendizagem dos conceitos básicos de programação de forma dinâmica, acessível e motivadora.
+4.1 Objetivos Específicos
+
+Ensinar conceitos fundamentais de lógica de programação;
+Desenvolver atividades relacionadas a algoritmos e resolução de problemas;
+Utilizar mecânicas de gamificação para aumentar o engajamento dos usuários;
+Oferecer feedback imediato sobre o desempenho dos jogadores;
+Estimular o desenvolvimento do raciocínio lógico e do pensamento computacional;
+Criar uma interface intuitiva e acessível para diferentes faixas etárias;
+Promover uma experiência de aprendizagem prática e divertida.
+
+
+\subsection{ Referências}
+ALVES, Flora. Gamification: Como criar experiências de aprendizagem engajadoras. São Paulo: DVS Editora, 2015.
+BACICH, Lilian; MORAN, José. Metodologias Ativas para uma Educação Inovadora: uma abordagem teórico-prática. Porto Alegre: Penso, 2018.
+PRENSKY, Marc. Aprendizagem Baseada em Jogos Digitais. São Paulo: Senac, 2012.
+RESNICK, Mitchel. Jardim de Infância para a Vida Toda: por uma aprendizagem criativa, mão na massa e relevante para todos. Porto Alegre: Penso, 2020.
+SILVA, Marco; SALES, Shirlei. Gamificação na Educação. São Paulo: Pearson Education do Brasil, 2017.
+WING, Jeannette M. Computational Thinking. Communications of the ACM, v. 49, n. 3, p. 33-35, 2006.
+VALENTE, José Armando. Pensamento Computacional, Letramento Computacional ou Competência Digital? Novos desafios da educação. Revista Educação e Cultura Contemporânea, v. 16, n. 43, 2019.
+
+
+
+
+
+
+
+
+\section{Referencial Teorico}
+\subsection{ Tecnologias na Educação}
+As tecnologias digitais têm transformado significativamente o processo de ensino e aprendizagem, proporcionando novas formas de interação entre alunos, professores e conteúdos educacionais. Recursos como aplicativos, plataformas virtuais, jogos digitais e ambientes interativos permitem que o conhecimento seja construído de forma mais dinâmica e acessível.
+Segundo Moran (2018), a utilização de tecnologias na educação promove experiências de aprendizagem mais personalizadas e participativas, favorecendo o desenvolvimento de competências importantes para o século XXI. Além disso, as ferramentas digitais ampliam o acesso à informação e estimulam o protagonismo dos estudantes durante o processo educacional.
+Nesse contexto, os aplicativos educacionais surgem como instrumentos capazes de tornar o aprendizado mais atrativo, principalmente quando associados a elementos interativos e lúdicos que incentivam a participação ativa dos usuários.
+Referências do tópico
+
+BACICH, L.; MORAN, J. Metodologias Ativas para uma Educação Inovadora. Porto Alegre: Penso, 2018.
+MORAN, J. A Educação que Desejamos: Novos desafios e como chegar lá. Campinas: Papirus, 2013.
+
+\subsection{ Aprendizagem Ativa}
+A aprendizagem ativa é uma abordagem educacional em que o estudante assume um papel central na construção do conhecimento. Diferentemente dos métodos tradicionais, nos quais o aluno atua apenas como receptor de informações, essa metodologia estimula a participação, a experimentação, a resolução de problemas e a tomada de decisões.
+De acordo com Freire (1996), o aprendizado se torna mais significativo quando o indivíduo participa ativamente da construção do conhecimento. Em complemento, Bacich e Moran (2018) destacam que metodologias ativas favorecem o desenvolvimento da autonomia, do pensamento crítico e da capacidade de resolução de problemas.
+No contexto deste projeto, os minijogos educacionais representam uma estratégia de aprendizagem ativa, pois desafiam os usuários a aplicar conhecimentos de lógica e programação para superar obstáculos e avançar nos níveis propostos.
+Referências do tópico
+
+FREIRE, P. Pedagogia da Autonomia: Saberes necessários à prática educativa. São Paulo: Paz e Terra, 1996.
+BACICH, L.; MORAN, J. Metodologias Ativas para uma Educação Inovadora. Porto Alegre: Penso, 2018.
+
+
+\subsection{ Usabilidade}
+A usabilidade refere-se à facilidade com que os usuários conseguem utilizar um sistema para atingir seus objetivos de forma eficiente, eficaz e satisfatória. Em aplicativos educacionais, a usabilidade é um fator essencial, pois influencia diretamente a experiência do usuário e sua motivação para continuar utilizando a ferramenta.
+Conforme Nielsen (1994), um sistema com boa usabilidade deve ser intuitivo, fácil de aprender e minimizar erros durante a interação. Da mesma forma, a norma ISO 9241-11 define usabilidade como a capacidade de um produto ser utilizado por usuários específicos para alcançar objetivos específicos com eficácia, eficiência e satisfação.
+No desenvolvimento de um aplicativo educacional voltado ao ensino de programação, é fundamental que a interface seja clara e acessível, permitindo que os usuários concentrem seus esforços na aprendizagem dos conteúdos, e não na compreensão do funcionamento da plataforma.
+Referências do tópico
+
+NIELSEN, J. Usability Engineering. Boston: Academic Press, 1994.
+INTERNATIONAL ORGANIZATION FOR STANDARDIZATION (ISO). ISO 9241-11: Ergonomics of Human-System Interaction. Genebra, 2018.
+
+
+\subsection{Quantas referências utilizar?}
+Para um projeto acadêmico de curso técnico, normalmente entre 6 e 12 referências já é suficiente para um bom referencial teórico. Para o seu tema, recomendo pelo menos:
+
+Bacich e Moran (Metodologias Ativas);
+Paulo Freire (Aprendizagem Ativa);
+Moran (Tecnologias na Educação);
+Nielsen (Usabilidade);
+ISO 9241-11 (Usabilidade);
+Resnick (Aprendizagem Criativa e Pensamento Computacional);
+Prensky (Aprendizagem Baseada em Jogos Digitais);
+Wing (Pensamento Computacional).
+
+
+
+
+
+
+
+
+\section{Metodologia}
+\subsection{como o projeto foi realizado}
+\subesection{ Tipo de Pesquisa}
+O presente trabalho caracteriza-se como uma pesquisa aplicada, pois busca desenvolver uma solução prática para auxiliar no ensino de programação por meio de um aplicativo educacional. Além disso, possui caráter exploratório e descritivo, uma vez que procura compreender as dificuldades enfrentadas por iniciantes na aprendizagem de programação e propor uma ferramenta capaz de minimizar esses desafios.
+A pesquisa exploratória permite maior familiaridade com o problema estudado, enquanto a pesquisa descritiva busca apresentar as características e funcionalidades do aplicativo desenvolvido.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.75\linewidth]{screencapture-figma-make-EIFMnoSP2S5WOAzQQ7DQWH-Website-Builder-2026-06-30-19_21_22.pdf}
+    \caption{Enter Caption}
+    \label{fig:placeholder}
+\end{figure}
+
+\subsection{Abordagem da Pesquisa}
+A pesquisa adota uma abordagem qualitativa, focando na análise da experiência do usuário e na aplicação de conceitos educacionais e tecnológicos durante o desenvolvimento do aplicativo.
+Também possui elementos quantitativos, que podem ser utilizados futuramente na avaliação do sistema por meio de métricas como número de acertos, pontuação, tempo de resolução dos desafios e progresso dos usuários.
+
+\subsection{ Etapas do Desenvolvimento}
+O desenvolvimento do projeto foi dividido em etapas para garantir uma organização adequada do processo de criação.
+Levantamento Bibliográfico
+Realização de pesquisas sobre:
+
+Tecnologias na educação;
+Gamificação;
+Aprendizagem ativa;
+Ensino de programação;
+Usabilidade em aplicativos.
+
+Levantamento de Requisitos
+Identificação das principais funcionalidades do sistema, como:
+
+Cadastro e login de usuários;
+Sistema de níveis;
+Minijogos educativos;
+Sistema de pontuação;
+Feedback de desempenho.
+
+Modelagem do Sistema
+Elaboração dos diagramas necessários para representar a estrutura e funcionamento do aplicativo.
+Desenvolvimento da Aplicação
+Implementação da interface e das funcionalidades utilizando as tecnologias definidas para o projeto.
+Testes
+Realização de testes funcionais para verificar:
+
+Funcionamento dos jogos;
+Navegação entre telas;
+Registro de pontuações;
+Experiência do usuário.
+
+Avaliação dos Resultados
+Análise dos resultados obtidos e verificação do atendimento aos objetivos propostos.
+
+\subsection{ Tecnologias Utilizadas}
+As tecnologias utilizadas no desenvolvimento do aplicativo foram selecionadas considerando desempenho, facilidade de manutenção e compatibilidade com dispositivos móveis.
+Front-end
+
+Flutter: framework utilizado para criação da interface gráfica multiplataforma.
+Dart: linguagem de programação utilizada pelo Flutter.
+
+Back-end
+
+Firebase Authentication: gerenciamento de login e cadastro de usuários.
+Cloud Firestore: armazenamento de dados dos usuários e progresso nos jogos.
+
+Ferramentas de Desenvolvimento
+
+Visual Studio Code (VS Code);
+Git e GitHub para controle de versões;
+Figma para prototipação das telas.
+
+
+\subsection{Diagramas}
+Diagrama de Casos de Uso
+Representa as principais interações entre o usuário e o aplicativo.
+
++----------------+
+            |    Usuário     |
+            +--------+-------+
+                     |
+     ---------------------------------
+     |              |               |
+Cadastrar      Realizar       Visualizar
+Conta          Desafios       Progresso
+     |              |               |
+     ---------------------------------
+                     |
+             Receber Pontuação
+
+             Diagrama de Atividades
+Representa o fluxo básico de utilização do sistema.
+Início
+   |
+Tela Inicial
+   |
+Login/Cadastro
+   |
+Selecionar Jogo
+   |
+Realizar Desafio
+   |
+Verificar Resposta
+   |
++------------------+
+| Resposta Correta?|
++------------------+
+      |      |
+     Sim    Não
+      |      |
+Ganhar    Mostrar
+Pontos    Erro
+      |      |
+      +------+
+          |
+Próximo Nível
+          |
+         Fim
+
+         Diagrama de Classes (Simplificado)
+         +----------------+
+|   Usuario      |
++----------------+
+| id             |
+| nome           |
+| email          |
+| pontuacao      |
++----------------+
+
+         |
+
++----------------+
+|     Jogo       |
++----------------+
+| id             |
+| nome           |
+| nivel          |
++----------------+
+
+         |
+
++----------------+
+|   Desafio      |
++----------------+
+| id             |
+| pergunta       |
+| resposta       |
++----------------+
+Diagrama de Entidade-Relacionamento (DER)
+USUARIO
+---------
+id_usuario (PK)
+nome
+email
+pontuacao
+
+      1
+      |
+      |
+      N
+
+PROGRESSO
+---------
+id_progresso (PK)
+nivel
+pontos
+id_usuario (FK)
+
+      N
+      |
+      |
+      1
+
+JOGO
+---------
+id_jogo (PK)
+nome
+categoria
+\subsection{Quantas Referencias}
+
+
+
+
+
+\section{Resultdados e Discussões}
+
+\subsection{Mostrar as telas do sistema funcionando}
+\subsection{ Explicação das Funcionalidades}
+O aplicativo educacional foi desenvolvido com o objetivo de ensinar conceitos básicos de programação por meio de minijogos interativos. Durante seu desenvolvimento, foram implementadas funcionalidades que auxiliam na aprendizagem e tornam a experiência do usuário mais dinâmica.
+Cadastro e Login
+A funcionalidade de cadastro permite que o usuário crie uma conta utilizando seus dados pessoais. Após o registro, é possível realizar o login e acessar seus dados de progresso e pontuação.
+Seleção de Jogos
+O sistema disponibiliza diferentes minijogos voltados para conteúdos específicos da programação, permitindo que o usuário escolha as atividades de acordo com seu nível de aprendizado.
+Desafios de Programação
+Os jogos apresentam desafios relacionados a:
+
+Lógica de programação;
+Algoritmos;
+Variáveis;
+Estruturas condicionais;
+Estruturas de repetição;
+Resolução de problemas.
+
+Cada desafio foi desenvolvido para estimular o raciocínio lógico e a tomada de decisões.
+Sistema de Pontuação
+Ao concluir corretamente uma atividade, o usuário recebe pontos que contribuem para seu avanço dentro da plataforma. Esse sistema funciona como um elemento de gamificação, incentivando a continuidade dos estudos.
+Níveis de Progressão
+Os níveis são desbloqueados conforme o progresso do usuário. Dessa forma, os desafios tornam-se gradativamente mais complexos, respeitando a evolução do aprendizado.
+Feedback Imediato
+Após cada tentativa, o usuário recebe uma resposta indicando se acertou ou errou o desafio, além de explicações que auxiliam na compreensão do conteúdo estudado.
+Acompanhamento do Desempenho
+O aplicativo registra o progresso do usuário, permitindo a visualização de:
+
+Pontuação total;
+Níveis concluídos;
+Quantidade de desafios resolvidos;
+Desempenho geral.
+
+
+\subsection{Discussão dos Resultados}
+Os resultados obtidos demonstram que a utilização de elementos de gamificação e interatividade pode contribuir significativamente para o processo de aprendizagem de programação. A abordagem baseada em jogos torna o ensino mais atrativo quando comparado aos métodos tradicionais centrados apenas na teoria.
+Durante o desenvolvimento do projeto, observou-se que a combinação entre desafios progressivos, pontuação e feedback imediato favorece o engajamento dos usuários, estimulando a prática constante dos conteúdos abordados.
+Além disso, a estrutura dos minijogos possibilita a aprendizagem gradual dos conceitos de programação, permitindo que o usuário desenvolva habilidades de lógica computacional de forma natural e intuitiva. Essa característica é especialmente importante para iniciantes que normalmente encontram dificuldades nos primeiros contatos com a área de desenvolvimento de software.
+Outro aspecto relevante está relacionado à usabilidade da aplicação. A criação de uma interface simples e organizada facilita a navegação e reduz possíveis barreiras durante a utilização do sistema. Isso permite que o usuário concentre sua atenção na resolução dos desafios e na aquisição do conhecimento.
+Dessa forma, os resultados indicam que o aplicativo apresenta potencial para atuar como uma ferramenta complementar ao ensino de programação, auxiliando estudantes e iniciantes no desenvolvimento de competências relacionadas ao pensamento computacional e à resolução de problemas.
+
+\subsection{ Referências}
+ALVES, Flora. Gamification: Como criar experiências de aprendizagem engajadoras. São Paulo: DVS Editora, 2015.
+BACICH, Lilian; MORAN, José. Metodologias Ativas para uma Educação Inovadora: uma abordagem teórico-prática. Porto Alegre: Penso, 2018.
+FREIRE, Paulo. Pedagogia da Autonomia: Saberes necessários à prática educativa. São Paulo: Paz e Terra, 1996.
+MORAN, José. A Educação que Desejamos: Novos desafios e como chegar lá. Campinas: Papirus, 2013.
+NIELSEN, Jakob. Usability Engineering. Boston: Academic Press, 1994.
+PRENSKY, Marc. Aprendizagem Baseada em Jogos Digitais. São Paulo: Senac, 2012.
+RESNICK, Mitchel. Jardim de Infância para a Vida Toda: por uma aprendizagem criativa, mão na massa e relevante para todos. Porto Alegre: Penso, 2020.
+WING, Jeannette M. Computational Thinking. Communications of the ACM, v. 49, n. 3, p. 33-35, 2006.
+ISO 9241-11. Ergonomics of Human-System Interaction – Usability: Definitions and Concepts. International Organization for Standardization, Genebra, 2018.
+
+
+
+
+
+\section{Considerações}
+O presente projeto teve como objetivo desenvolver um aplicativo educacional composto por minijogos interativos capazes de auxiliar no ensino dos conceitos básicos de programação de forma dinâmica, acessível e motivadora. A proposta buscou unir educação e entretenimento, utilizando elementos de gamificação para tornar o processo de aprendizagem mais atrativo para iniciantes.
+Os resultados alcançados demonstraram que a utilização de jogos educacionais pode contribuir significativamente para a compreensão de conceitos fundamentais da programação, como lógica computacional, algoritmos, variáveis, estruturas condicionais e estruturas de repetição. Por meio dos desafios propostos, o usuário é incentivado a praticar e aplicar os conhecimentos adquiridos de forma contínua, favorecendo o desenvolvimento do raciocínio lógico e da capacidade de resolução de problemas.
+Entre os principais benefícios encontrados, destaca-se o aumento do engajamento dos usuários durante o processo de aprendizagem. Recursos como sistema de pontuação, progressão por níveis e feedback imediato tornam a experiência mais motivadora e estimulam a permanência na plataforma. Além disso, a interface intuitiva e a organização dos conteúdos contribuem para uma melhor usabilidade, facilitando o acesso ao conhecimento e promovendo uma experiência de aprendizado mais eficiente.
+Entretanto, o projeto também apresenta algumas limitações. Entre elas, destaca-se a quantidade limitada de minijogos e conteúdos disponíveis na versão inicial do aplicativo, restringindo a abrangência dos temas de programação abordados. Outra limitação está relacionada à ausência de testes com um grande número de usuários, o que dificulta uma avaliação mais ampla sobre a eficácia da ferramenta em diferentes contextos educacionais.
+Como trabalhos futuros, sugere-se a ampliação do número de jogos e desafios, a inclusão de conteúdos mais avançados de programação, a implementação de novos recursos de personalização da aprendizagem e a integração com sistemas de acompanhamento de desempenho. Além disso, recomenda-se a realização de testes com estudantes e instituições de ensino para validar os resultados obtidos e identificar oportunidades de melhoria na aplicação.
+Conclui-se, portanto, que o aplicativo desenvolvido apresenta potencial para atuar como uma ferramenta complementar no ensino de programação, contribuindo para a democratização do aprendizado tecnológico e tornando a aquisição de conhecimentos mais acessível, interativa e motivadora para seus usuários.
+
+\subsection{Referências}
+ALVES, Flora. Gamification: Como criar experiências de aprendizagem engajadoras. São Paulo: DVS Editora, 2015.
+BACICH, Lilian; MORAN, José. Metodologias Ativas para uma Educação Inovadora: uma abordagem teórico-prática. Porto Alegre: Penso, 2018.
+FREIRE, Paulo. Pedagogia da Autonomia: Saberes necessários à prática educativa. São Paulo: Paz e Terra, 1996.
+MORAN, José. A Educação que Desejamos: Novos desafios e como chegar lá. Campinas: Papirus, 2013.
+NIELSEN, Jakob. Usability Engineering. Boston: Academic Press, 1994.
+PRENSKY, Marc. Aprendizagem Baseada em Jogos Digitais. São Paulo: Senac, 2012.
+RESNICK, Mitchel. Jardim de Infância para a Vida Toda: por uma aprendizagem criativa, mão na massa e relevante para todos. Porto Alegre: Penso, 2020.
+WING, Jeannette M. Computational Thinking. Communications of the ACM, v. 49, n. 3, p. 33-35, 2006.
+ISO 9241-11. Ergonomics of Human-System Interaction – Usability: Definitions and Concepts. Genebra: International Organization for Standardization, 2018.
+
+Simply use the section and subsection commands, as in this example document! With Overleaf, all the formatting and numbering is handled automatically according to the template you've chosen. If you're using the Visual Editor, you can also create new section and subsections via the buttons in the editor toolbar.
+
+\subsection{How to include Figures}
+
+First you have to upload the image file from your computer using the upload link in the file-tree menu. Then use the includegraphics command to include it in your document. Use the figure environment and the caption command to add a number and a caption to your figure. See the code for Figure \ref{fig:frog} in this section for an example.
+
+Note that your figure will automatically be placed in the most appropriate place for it, given the surrounding text and taking into account other figures or tables that may be close by. You can find out more about adding images to your documents in this help article on \href{https://www.overleaf.com/learn/how-to/Including_images_on_Overleaf}{including images on Overleaf}.
+
+\begin{figure}
+\centering
+\includegraphics[width=1\linewidth]{frog.jpg}
+\caption{\label{fig:frog}This frog was uploaded via the file-tree menu.}
+\end{figure}
+
+\subsection{How to add Tables}
+
+Use the table and tabular environments for basic tables --- see Table~\ref{tab:widgets}, for example. For more information, please see this help article on \href{https://www.overleaf.com/learn/latex/tables}{tables}.
+
+\begin{table}
+\centering
+\begin{tabular}{l|r}
+Item & Quantity \\\hline
+Widgets & 42 \\
+Gadgets & 13
+\end{tabular}
+\caption{\label{tab:widgets}An example table.}
+\end{table}
+
+\subsection{How to add Comments and Track Changes}
+
+Comments can be added to your project by highlighting some text and clicking ``Add comment'' in the top right of the editor pane. To view existing comments, click on the Review menu in the toolbar above. To reply to a comment, click on the Reply button in the lower right corner of the comment. You can close the Review pane by clicking its name on the toolbar when you're done reviewing for the time being.
+
+Track changes are available on all our \href{https://www.overleaf.com/user/subscription/plans}{premium plans}, and can be toggled on or off using the option at the top of the Review pane. Track changes allow you to keep track of every change made to the document, along with the person making the change.
+
+\subsection{How to add Lists}
+
+You can make lists with automatic numbering \dots
+
+\begin{enumerate}
+\item Like this,
+\item and like this.
+\end{enumerate}
+\dots or bullet points \dots
+\begin{itemize}
+\item Like this,
+\item and like this.
+\end{itemize}
+
+\subsection{How to write Mathematics}
+
+\LaTeX{} is great at typesetting mathematics. Let $X_1, X_2, \ldots, X_n$ be a sequence of independent and identically distributed random variables with $\text{E}[X_i] = \mu$ and $\text{Var}[X_i] = \sigma^2 < \infty$, and let
+\[S_n = \frac{X_1 + X_2 + \cdots + X_n}{n}
+      = \frac{1}{n}\sum_{i}^{n} X_i\]
+denote their mean. Then as $n$ approaches infinity, the random variables $\sqrt{n}(S_n - \mu)$ converge in distribution to a normal $\mathcal{N}(0, \sigma^2)$.
+
+
+\subsection{How to change the margins and paper size}
+
+Usually the template you're using will have the page margins and paper size set correctly for that use-case. For example, if you're using a journal article template provided by the journal publisher, that template will be formatted according to their requirements. In these cases, it's best not to alter the margins directly.
+
+If however you're using a more general template, such as this one, and would like to alter the margins, a common way to do so is via the geometry package. You can find the geometry package loaded in the preamble at the top of this example file, and if you'd like to learn more about how to adjust the settings, please visit this help article on \href{https://www.overleaf.com/learn/latex/page_size_and_margins}{page size and margins}.
+
+\subsection{How to change the document language and spell check settings}
+
+Overleaf supports many different languages, including multiple different languages within one document.
+
+To configure the document language, simply edit the option provided to the babel package in the preamble at the top of this example project. To learn more about the different options, please visit this help article on \href{https://www.overleaf.com/learn/latex/International_language_support}{international language support}.
+
+To change the spell check language, simply open the Overleaf menu at the top left of the editor window, scroll down to the spell check setting, and adjust accordingly.
+
+\subsection{How to add Citations and a References List}
+
+You can simply upload a \verb|.bib| file containing your BibTeX entries, created with a tool such as JabRef. You can then cite entries from it, like this: \cite{greenwade93}. Just remember to specify a bibliography style, as well as the filename of the \verb|.bib|. You can find a \href{https://www.overleaf.com/help/97-how-to-include-a-bibliography-using-bibtex}{video tutorial here} to learn more about BibTeX.
+
+If you have an \href{https://www.overleaf.com/user/subscription/plans}{upgraded account}, you can also import your Mendeley or Zotero library directly as a \verb|.bib| file, via the upload menu in the file-tree.
+
+\subsection{Good luck!}
+
+We hope you find Overleaf useful, and do take a look at our \href{https://www.overleaf.com/learn}{help library} for more tutorials and user guides! Please also let us know if you have any feedback using the \textbf{Contact us} link at the bottom of the Overleaf menu --- or use the contact form at \url{https://www.overleaf.com/contact}.
+
+\bibliographystyle{alpha}
+\bibliography{sample}
+
+
+
+\end{document}
